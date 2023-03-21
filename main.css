@@ -5,6 +5,7 @@ body {
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 
@@ -29,6 +30,7 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,
@@ -64,9 +66,6 @@ a {
   background: rgba(255, 255, 255, 0.2);
   opacity: 0.9;
   border-radius: 4px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   color: #fff;
   gap: 6px;
   padding: 20px 50px;
@@ -75,6 +74,16 @@ a {
   opacity: 0.7;
   transform: translateY(-6px);
   transition: 0.4s;
+}
+
+.nava {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #FFFFFF;
 }
 
 .center {
@@ -291,4 +300,39 @@ main .under-line {
 .start.active {
   box-shadow: rgb(235, 235, 235) 0px 0px 0px;
   transform: translateY(6px);
+}
+
+@media screen and (max-width: 805px) {
+  .line {
+    width: 480px !important;
+  }
+  .navbar {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 505px) {
+  h1 {
+    display: none !important;
+  }
+  .nava {
+    display: none;
+  }
+  .btn {
+    padding: 10px !important;
+  }
+  .timer-box {
+    width: 350px !important;
+  }
+  .line {
+    width: 350px !important;
+  }
+  .timer {
+    font-size: 90px !important;
+  }
+  .task-box {
+    gap: 250px !important;
+  }
+  .under-line {
+    width: 350px !important;
+  }
 }
