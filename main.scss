@@ -15,8 +15,10 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px 450px;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  gap: 300px;
   user-select: none;
   .right-nav,
   .left-nav,
@@ -63,10 +65,15 @@ a {
     }
   }
 }
-
-.line {
-  width: 640px;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.1);
-  margin-left: 450px;
+.center{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .line {
+    width: 760px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    
+  }
+  
 }
