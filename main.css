@@ -5,6 +5,7 @@ body {
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 
@@ -29,6 +30,7 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,
@@ -341,5 +343,20 @@ main .under-line {
   }
   .main-menu {
     font-size: 12px;
+  }
+  .btn {
+    width: 40px !important;
+  }
+  .navbar {
+    gap: 150px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .menu {
+    gap: 5px !important;
+  }
+  .main-menu {
+    font-size: 14px !important;
+    font-weight: 400;
   }
 }
