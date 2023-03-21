@@ -3,6 +3,10 @@ body {
   padding: 0;
   background: #ba4949;
   cursor: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 * {
@@ -25,6 +29,7 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,

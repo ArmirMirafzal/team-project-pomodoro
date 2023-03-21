@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #ba4949;
   cursor: none;
+  user-select: none;
 }
 * {
   box-sizing: border-box;
@@ -272,3 +273,4 @@ main{
     }
   }
 }
+//////end////
