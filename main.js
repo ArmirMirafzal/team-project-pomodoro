@@ -1,8 +1,14 @@
-
+const audio = new Audio("ES_Button Switch Click 1 - SFX Producer.mp3");
+const buttons = document.querySelectorAll("button");
 "use strict";
-let buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
       audio.play();
     });
   });
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove", function (e) {
+  cursor.style.cssText = cursor2.style.cssText =
+    "left: " + e.clientX + "px; top:" + e.clientY + "px;";
+});
