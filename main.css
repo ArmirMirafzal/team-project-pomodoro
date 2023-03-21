@@ -5,7 +5,6 @@ body {
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -30,7 +29,6 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,
@@ -311,6 +309,9 @@ main .under-line {
   }
 }
 @media screen and (max-width: 505px) {
+  body {
+    padding: 20px;
+  }
   h1 {
     display: none !important;
   }
@@ -334,5 +335,11 @@ main .under-line {
   }
   .under-line {
     width: 350px !important;
+  }
+  .add-task-box {
+    margin: 20px 10px;
+  }
+  .main-menu {
+    font-size: 12px;
   }
 }

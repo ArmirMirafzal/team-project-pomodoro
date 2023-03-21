@@ -301,6 +301,9 @@ main{
   }
 }
 @media screen and (max-width: 505px) { 
+  body{
+    padding: 20px;
+  }
   h1{ 
     display: none!important;
   }
@@ -324,6 +327,12 @@ main{
   }
   .under-line{ 
     width: 350px!important;
+  }
+  .add-task-box{
+    margin: 20px 10px;
+  }
+  .main-menu{
+    font-size: 12px;
   }
 }
 //////end////
