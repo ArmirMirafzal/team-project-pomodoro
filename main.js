@@ -1,5 +1,6 @@
 "use strict";
 const audio = new Audio("ES_Button Switch Click 1 - SFX Producer.mp3");
+const finishaudio = new Audio("alarm-clock-short-6402.mp3");
 const buttons = document.querySelectorAll("button");
 const pomodoro = document.querySelector(".pomodoro");
 const short = document.querySelector(".short-break");
@@ -11,6 +12,7 @@ const actionBtns = document.querySelectorAll(".main-menu")
 
 let time = 1500;
 let intervalID;
+
 
 
 buttons.forEach((button) => {
@@ -32,6 +34,8 @@ function mainBtns(func, color, backcolor,twobackcolor){
     start.style.color = color;
     document.body.style.background = twobackcolor;
 }
+
+const stopTimer = () => clearInterval(intervalID);
 
 short.addEventListener("click", function (e) {
     mainBtns(timeConvertor(300),"#4C9196","#4C9196","#38858A");
@@ -57,8 +61,13 @@ function handleStart() {
 	} else {
 		intervalID = setInterval(() => {
 			time--;
-			timer.innerText = timeConvertor(time);
-		}, 1000);
+            timer.innerText = timeConvertor(time);
+            if(time === 0){
+                timer.textContent = `${timeConvertor(time) }`;
+                stopTimer();
+                finishaudio.play();
+            }
+		}, 10);
 	}
 }
 
