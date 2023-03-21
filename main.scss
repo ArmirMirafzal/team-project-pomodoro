@@ -14,7 +14,7 @@ body {
 a {
   text-decoration: none;
 }
-
+/* --- Mirafzal --- */
 .navbar {
   display: flex;
   align-items: center;
@@ -63,6 +63,11 @@ a {
       color: #fff;
       gap: 6px;
       padding: 20px 50px;
+      &:hover{
+        opacity: .7;
+        transform: translateY(-6px);
+        transition: 0.4s;
+      }
     }
   }
 }
@@ -78,6 +83,8 @@ a {
   }
   
 }
+
+/* ---- Abdulloh --- */
 section{ 
   display: flex;
   align-items: center;
@@ -272,5 +279,10 @@ main{
       opacity: 0.8;
     }
   }
+}
+
+.start.active {
+	box-shadow: rgb(235, 235, 235) 0px 0px 0px;
+	transform: translateY(6px);
 }
 //////end////

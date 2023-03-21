@@ -5,7 +5,6 @@ body {
   cursor: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -20,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+/* --- Mirafzal --- */
 .navbar {
   display: flex;
   align-items: center;
@@ -29,7 +29,6 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,
@@ -72,6 +71,11 @@ a {
   gap: 6px;
   padding: 20px 50px;
 }
+.navbar .right-nav .btn:hover {
+  opacity: 0.7;
+  transform: translateY(-6px);
+  transition: 0.4s;
+}
 
 .center {
   display: flex;
@@ -84,6 +88,7 @@ a {
   background: rgba(0, 0, 0, 0.1);
 }
 
+/* ---- Abdulloh --- */
 section {
   display: flex;
   align-items: center;
@@ -281,4 +286,9 @@ main .under-line {
   line-height: 19px;
   color: #FFFFFF;
   opacity: 0.8;
+}
+
+.start.active {
+  box-shadow: rgb(235, 235, 235) 0px 0px 0px;
+  transform: translateY(6px);
 }
