@@ -67,7 +67,7 @@ function handleStart() {
                 stopTimer();
                 finishaudio.play();
             }
-		}, 10);
+		}, 1000);
 	}
 }
 
