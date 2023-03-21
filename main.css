@@ -25,7 +25,6 @@ a {
   gap: 300px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .navbar .right-nav,
@@ -196,9 +195,9 @@ main .center3 {
 main .task-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 390px;
   margin-top: 20px;
-  padding: 0 730px 0 730px;
 }
 main .task-box .task {
   font-family: "poppins";

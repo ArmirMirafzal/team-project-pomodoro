@@ -191,9 +191,9 @@ main{
   .task-box{ 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 390px;
     margin-top: 20px;
-    padding: 0 730px 0 730px;
     .task{ 
       font-family: 'poppins';
       font-style: normal;
